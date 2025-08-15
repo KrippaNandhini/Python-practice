@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "log-parser"
+version = "0.1.0"
+description = "Production-grade Python scaffolding"
+authors = ["Krippa Nandhini"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.0"
+flake8 = "^7.0"
+mypy = "^1.10"
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
